@@ -1,6 +1,7 @@
 const linkContainer = document.querySelector(".link-container") 
 const links = document.querySelectorAll(".link-box a")
 const disappear = document.getElementById("disappear")
+const footerLinks = document.querySelectorAll('#footer a')
 
 function appearLinks() {
     linkContainer.style.opacity = 1
@@ -8,8 +9,9 @@ function appearLinks() {
 
     for(let pass of links ) {
         pass.style.pointerEvents = 'initial'
-        pass.style.cursor = 'pointer'
     }
+
+    footerLinks.forEach(item => item.style.pointerEvents = 'initial')
 }
 
 function disappearLinks() {
@@ -18,6 +20,7 @@ function disappearLinks() {
 
     for(let pass of links ) {
         pass.style.pointerEvents = 'none'
-        pass.style.cursor = 'none'
     }
+
+    footerLinks.forEach(item => item.style.pointerEvents = 'none')
 }

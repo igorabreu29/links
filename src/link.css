@@ -52,7 +52,7 @@ main {
 }
 
 .card-container {
-    max-width: 20%;
+    max-width: 18%;
     width: 100%;
     background-color: #06314e;
     border-radius: 8px;
@@ -152,6 +152,10 @@ main {
     gap: 1.2rem;
 }
 
+.link-container footer a {
+    pointer-events: none;
+}
+
 .link-container footer a:hover {
     transform: scale(1.2);
     transition: transform 0.2s;
@@ -217,7 +221,7 @@ main {
         border-radius:4px;
         box-shadow: 1px 1px 1px #070f0f,
                     -3px -3px 10px #06314e;      
-        cursor: auto;
+        cursor: pointer;
         transition: transform 0.2s;
         pointer-events: none;
 }
